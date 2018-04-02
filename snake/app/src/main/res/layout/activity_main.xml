@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B7B7B7"
+    android:orientation="vertical">
+
+    <com.starssoft.snake.MySnakeView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:background="#B7B7B7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:button="@null"
+            android:text="暂停"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:text="作者：HRF"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/bt_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="设置速度"
+            android:textColor="#fff"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bt_t"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:text="上" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_l"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="50dp"
+                    android:text="左" />
+
+                <Button
+                    android:id="@+id/bt_r"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:text="右" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_b"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:text="下" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
